@@ -3,9 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
-    "lint": "ng lint",
+    "web": "ng build --watch",
     "server": "ts-node-dev server/index.ts"
   },
   "private": true,
