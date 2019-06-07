@@ -9,8 +9,16 @@
     <div style="width:50%;">Column 2</div>
   </div>
   <div style="display:flex; flex-direction: row; justify-content: space-around;">
-    <button>Menu 1</button>
-    <button>Menu 2</button>
+    <button mat-button [matMenuTriggerFor]="menu1">Menu 1</button>
+    <mat-menu #menu1="matMenu" yPosition="below">
+      <button mat-menu-item>Item 1</button>
+      <button mat-menu-item>Item 2</button>
+    </mat-menu>
+    <button mat-button [matMenuTriggerFor]="menu2">Menu 2</button>
+    <mat-menu #menu2="matMenu" yPostiion="below">
+      <button mat-menu-item>Item 1</button>
+      <button mat-menu-item>Item 2</button>
+    </mat-menu>
   </div>
 </div>
 

@@ -4,6 +4,7 @@ import { MatAutocompleteModule, MatCardModule, MatButtonModule,
 MatOptionModule, MatCheckboxModule, MatMenuModule } from '@angular/material';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -11,7 +12,8 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule, MatAutocompleteModule, MatCardModule, MatButtonModule, MatOptionModule, MatCheckboxModule, MatMenuModule
+    AppRoutingModule, MatAutocompleteModule, MatCardModule, MatButtonModule, MatOptionModule, MatCheckboxModule, MatMenuModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
