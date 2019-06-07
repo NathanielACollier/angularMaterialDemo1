@@ -1,9 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { MatAutocompleteModule, MatCardModule, MatButtonModule,
-MatOptionModule, MatCheckboxModule } from '@angular/material';
-import { FlexLayoutModule } from '@angular/flex-layout';
-
+MatOptionModule, MatCheckboxModule, MatMenuModule } from '@angular/material';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
@@ -13,7 +11,7 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule, MatAutocompleteModule, MatCardModule, MatButtonModule, MatOptionModule, MatCheckboxModule
+    AppRoutingModule, MatAutocompleteModule, MatCardModule, MatButtonModule, MatOptionModule, MatCheckboxModule, MatMenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]
