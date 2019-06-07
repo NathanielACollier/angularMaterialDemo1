@@ -1,7 +1,17 @@
-
-<div fxLayout="row" fxLayoutAlign="space-between">
-  <h1 >Test Angular Material</h1>
-  <div >Hey</div>
+<!-- 
+  for simple flex examples see: https://www.sketchingwithcss.com/samplechapter/cheatsheet.html#column
+  justify-content docs: https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content
+-->
+<div style="display:flex; flex-direction: column;">
+  <h1>Test Angular Material</h1>
+  <div style="display:flex; flex-direction: row">
+    <div style="width:50%;">Column 1</div>
+    <div style="width:50%;">Column 2</div>
+  </div>
+  <div style="display:flex; flex-direction: row; justify-content: space-around;">
+    <button>Menu 1</button>
+    <button>Menu 2</button>
+  </div>
 </div>
 
 <mat-card>Test Card</mat-card>
